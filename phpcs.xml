@@ -9,6 +9,7 @@
     <file>site/routes</file>
     <file>site/tests</file>
 
+    <exclude-pattern>public/index.php</exclude-pattern>
     <exclude-pattern>*/database/*</exclude-pattern>
     <exclude-pattern>*/cache/*</exclude-pattern>
     <exclude-pattern>*/*.js</exclude-pattern>
