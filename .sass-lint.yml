@@ -1,0 +1,41 @@
+#########################
+## Sample Sass Lint File
+#########################
+# Linter Options
+options:
+  # 合併預設規則
+  merge-default-rules: false
+# Rule Configuration
+rules:
+  hex-notation: # 16 進位色彩一定是小寫
+    - 2
+    -
+      style: lowercase
+
+  indentation: # 縮排一定是 4 個空白
+    - 2
+    -
+      size: 4
+
+  brace-style: # 起始大括號一定跟在選擇器之後，而且允許跟結束大括號在同一行
+    - 2
+    -
+      style: 1tbs
+
+  class-name-format: 2 # class 命名一定是小寫並允許使用連字符號
+  id-name-format: 2 # id 命名一定是小寫並允許使用連字符號
+  leading-zero: # 小數點前面一定不要包含零
+    - 2
+    -
+      include: false
+
+  no-color-keywords: 2 # 一定要用 16 進位色彩說明顏色，一定不能用英文單字
+  no-duplicate-properties: 2 # css 屬性一定不能重複定義
+  no-empty-rulesets: 2 # 選擇器裡頭的 css 屬性一定要定義
+  no-invalid-hex: 2 # 16 進位色彩設定一定要合法有效
+  no-mergeable-selectors: 2 # 相同選擇器一定不能重複設定
+  no-misspelled-properties: 2 # css 屬性名稱一定要是有效的
+  one-declaration-per-line: 2 # 多個 css 屬性一定不能寫成同一行
+  space-after-colon: 2 # css 屬性名稱冒號後一定要有一個空白字元
+  space-after-comma: 2 # css 屬性內容，逗號之後一定要有一個空白字元
+  no-universal-selectors: 1 # 應該避免使用全域選擇器(*)

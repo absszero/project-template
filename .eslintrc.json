@@ -1,0 +1,43 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/recommended"
+    ],
+    "rules": {
+        "no-console":0,
+        "no-alert": 0,
+        "no-bitwise": 0,
+        "camelcase": 2, //變數、函式的命名一定要使用 camelCase
+        "curly": 2, //if else 底下代碼區塊一定要用大括號包起來
+        "eqeqeq": 0,
+        "no-eq-null": 0,
+        "no-empty": 2, // 代碼區塊不得空白
+        "brace-style": 2, // 起始大括號一定跟控制語句或聲明語句同一行
+        "comma-spacing": 2, // 使用逗號後一定要加一個空白字元區隔
+        "comma-style": 2, // 使用逗號前面一定要跟著變數聲明
+        "indent": 2, // 縮排一定要用 4 個空白
+        "key-spacing": 2, //定義物件成員使用分號之後一定要加一個空白字元
+        "keyword-spacing": 2, //使用內建關鍵字之後一定要加一個空白字元
+        "no-spaced-func": 2, // 呼叫函式一定要函式名稱接著跟著小括號 ＝> funName()
+        "space-before-function-paren": ["error", "never"], //定義函式時後面的小括號一定要跟著函式名稱，一定不能有空白字元
+        "unicode-bom": 2, // 文件一定不能有 BOM
+        "vue/html-indent": {
+            "attribute": 2 //在<template> 內 html標籤屬性縮排一定要用 4 個空白
+        },
+        "vue/max-attributes-per-line": "off"
+    },
+    "globals": {
+        "$": false,
+        "_": true,
+        "Vue": true
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "parser": "babel-eslint"
+    }
+}
