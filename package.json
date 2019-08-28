@@ -7,7 +7,7 @@
     "babel-eslint": "^10.0",
     "eslint": "^5.0.0",
     "eslint-plugin-vue": "^5.2",
-    "sass-lint" : "^1.13"
+    "sass-lint": "^1.13"
   },
   "dependencies": {}
 }
